@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact me:</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <p><h2>Leave me a message:
+        </h2><img src="message.jpg" alt= "background"  height="50" width="50"></p>
+    <hr>
+        <form id="frm1">    
+                <p>
+                        <label> Enter your Name: </label>
+                        <input type= "text" id="name" name="name" width="200" placeholder="Enter your name"><br><br>
+
+                 </p>
+                <p>
+                        <label>Enter your Email:</label>
+                        <input type= "text" id="email" name="email" width="200" placeholder="name@example.com"><br><br>
+                </p>
+               <p>
+                    <label>Your message:  </label> <br><br>
+                    <textarea name="Comments" id="Comments" cols="50" rows="10" placeholder="Please leave a message"></textarea><br>
+                  
+               </p>   
+               <button type="button" onclick="myFunction()" >Submit</button> <br>
+
+            </form>
+
+            <p>You just typed:</p>
+           <label>Name:
+               </label> <input type="text" id="result1"  name="result1"  size="20"> <br>
+           <label>Email:
+               </label> <input type="text" id="result2"  name="result2"  size="20"> <br>
+
+
+            <script>
+                    function myFunction() {   
+                        
+                      var name1=document.getElementById("name").value;
+
+                      var email=document.getElementById("email").value;
+                      
+                        document.getElementById("result1").value =name1;
+                        document.getElementById("result2").value =email;
+                        
+                    }
+            </script>
+           
+
+
+           <form>    
+            
+            
+            <hr>
+
+        <fieldset>
+            <legend>
+                Your Review:
+            </legend>
+
+      <p>
+            <label>  Are you new to my website?
+            </label>
+                <input type="radio" name="yes" value="yes"  /> Yes
+                <input type="radio" name="no" value="No" /> No
+      </p>
+
+       
+<p>
+        <label>
+                Do you want to subscribe?
+              </label>
+          <input type="checkbox" name="service" value="Chk"  /> 
+</p>
+
+       
+     <p>What did you hear about me??
+        <select name="Hear">
+             <option value="LinkedIn">LinkedIn</option>
+            <option value="Facebook">Facebook</option>
+             <option value="Friends">Friends</option>
+        </select>
+    </p>
+    </fieldset>
+    <input type="submit" value="Submit Review" >
+
+ </form>     
+ 
+
+  
+  </body>
+</html>
